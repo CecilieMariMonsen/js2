@@ -1,4 +1,4 @@
-import { registerUrl } from "../../constants/api.js";
+import { logInURL } from "../../constants/api.js";
 
 export async function register(userDetails) {
     
@@ -9,7 +9,7 @@ export async function register(userDetails) {
     };
     
     
-    const response = await fetch(registerUrl, options);
+    const response = await fetch(logInURL, options);
     const json = await response.json();
 
     console.log(response);
