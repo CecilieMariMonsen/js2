@@ -16,31 +16,23 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-   <a class="navbar-brand" href="/"> <img src="/image/airplane.png" alt="Logo" width="50" height="44"> Voyage</a>
-    <button class="navbar-toggler" 
-    type="button" 
-    data-toggle="collapse" 
-    data-target="#navbarTogglerDemo02" 
-    aria-controls="navbarTogglerDemo02" 
-    aria-expanded="false" 
-    aria-label="Toggle navigation">
+   <a class="navbar-brand" href="#"> <img src="/image/airplane.png" alt="Logo" width="50" height="44"> Voyage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menu">
       <!--  <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/auth/login/index.html">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="/auth/register/index.html">Register</a>
+          <a class="nav-link" href="/auth/register/index.html">Register</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"><button>Log Out</button></a>
-          </li>--> 
+        <button>Log Out</button>--> 
       </ul>
      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search">
@@ -58,25 +50,14 @@
         </section>
         <section> 
           <div class="container mt-5 border rounded view" style="background-image: url(/image/pexels-andrew-neel-2859169.jpg); background-size: cover; background-repeat: no-repeat; max-width:500px;">
-              <h3 class="d-flex justify-content-center mt-5 text-white">Join the community</h3>
-              <form id="formRegister" method="post" action="/auth/profile">
+              <h3 class="d-flex justify-content-center mt-5 text-white">Login</h3>
+              <form id="loginForm" method="post" action="/auth/profile">
                 <div id="message"></div>
                 <div class="mb-3">
-                  <fieldset> 
-                    <div class="form-group mb-3">
-                      <label for="">Name</label>
-                      <input class="form-control" type="text" name="name" required  title="">
-                    </div>
-                    <div class="form-group mb-3">
-                      <label for="">Email</label> 
-                      <input class="form-control" type="email" name="email" required  title="Please only enter a noroff email">
-                    </div>
-                    <div class="form-group mb-3">
-                      <label for="">Password</label>
-                    <input class="form-control" type="password" name="password" required minlength="8">
-                    </div>
-                </div>  
-                    <button class="btn btn-secondary mb-5">Register</button> 
+                  <fieldset>
+                    <label class="form-label">Token</label>
+                    <input type="text" class="form-control" name="token" required/>
+                    <button class="btn btn-secondary mb-5">Login</button> 
                   </fieldset>
                 </form>
             </div>
@@ -87,8 +68,3 @@
     </footer>
 </body>
 </html>
-
-<!--
-  pattern="^[\w]+$"
-pattern="^[\w\-.]+@(stud.)?noroff.no$"
--->

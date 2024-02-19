@@ -1,6 +1,6 @@
 import { logInURL } from "../../constants/api.js";
 
-export async function register(userDetails) {
+export async function login(userDetails) {
     
     const options = {
         method: "POST",
