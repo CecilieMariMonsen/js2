@@ -1,4 +1,4 @@
-import { isLoggedIn } from "../../helpers/auth/isLoggdeln.js";
+import { isLoggedIn } from "../handlers/helpers/auth/isLogin.js";
 
 export function buildMenu() {
  const menu = document.querySelector("#menu");
